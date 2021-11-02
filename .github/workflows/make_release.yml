@@ -8,7 +8,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     timeout-minutes: 120
     env:
-      CIBW_SKIP: "cp27-* cp34-* pp27-* pp*-aarch64*"
+      CIBW_SKIP: "cp27-* cp34-* pp27-* pp*_aarch64"
       CIBW_BEFORE_BUILD: "pip install cython"
     strategy:
       matrix:
